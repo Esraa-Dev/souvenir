@@ -28,7 +28,13 @@ body {
 
 }
 
-h1,
+::selection{
+  background-color:var(--main-color);
+  color:var(--light-color)
+}
+h1{
+  color:#bcb3c3
+}
 h2,
 h3,
 h4,
@@ -165,6 +171,7 @@ p {
 }
 
 .ml3 {
+    text-shadow: 0 0 20px #fff, 0 0 30px #84358d, 0 0 40px #84358d, 0 0 50px #84358d, 0 0 60px #84358d, 0 0 70px #84358d, 0 0 80px #84358d;
   font-weight: 900;
   font-size: 3em;
 }

@@ -297,5 +297,9 @@ p {
   .ml3 {
     font-size: 1.7em;
   }
+  .scroll-icon {
+  bottom: 40px;
+ 
+}
 }
 /* End Media Query */

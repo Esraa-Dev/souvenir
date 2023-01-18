@@ -297,9 +297,11 @@ p {
   .ml3 {
     font-size: 1.7em;
   }
-  .scroll-icon {
-  bottom: 60px;
- 
+  
+}
+@media(max-width: 425px){
+.scroll-icon {
+  bottom: 80px;
 }
 }
 /* End Media Query */

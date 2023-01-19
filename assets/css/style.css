@@ -24,7 +24,15 @@ body {
   font-family: myFirstFont;
   background-color: var(--primary-color);
   direction: rtl;
-  position: relative;
+  /* position: relative;
+  position: relative; */
+  /* width: 100%;
+  height: 100vh; */
+  background: url("/assets/images/Wallpaper_LoveMae-Polkadot-Dreams-1.jpg");
+height:100%;
+background-size:cover;
+  /* background-repeat: no-repeat; */
+  background-position:center;
 
 }
 h1{
@@ -52,22 +60,22 @@ p {
   font-size: 20px;
 }
 .item-one {
-  background-color: rgb(152 179 124);
+  border:3px solid rgb(152 179 124);
 }
 .item-two {
-  background: rgb(144 100 145);
+    border:3px solid rgb(144 100 145);
 }
 .item-three {
-  background: rgb(182, 122, 80);
+      border:3px solid  rgb(182, 122, 80);
 }
 .item-four {
-  background: rgb(184, 98, 64);
+      border:3px solid rgb(184, 98, 64);
 }
 .item-five {
-  background: rgb(166, 93, 98);
+      border:3px solid rgb(166, 93, 98);
 }
 .item-six {
-  background: rgb(157, 149, 79);
+      border:3px solid rgb(157, 149, 79);
 }
 
 /* End Global Style */
@@ -138,7 +146,6 @@ p {
   height: 100vh;
   background: url("/assets/images/hero.png");
   background-repeat: no-repeat;
-  /* background-position: 50% 50%; */
   background-repeat: no-repeat;
 }
 .hero-img {
@@ -160,7 +167,13 @@ p {
 }
 
 .ml3 {
-    text-shadow: 0 0 20px #fff, 0 0 30px #84358d, 0 0 40px #84358d, 0 0 50px #84358d, 0 0 60px #84358d, 0 0 70px #84358d, 0 0 80px #84358d;
+  font-size: 72px;
+  /* background: -webkit-linear-gradient(#f3ec78, #af4261); */
+      background:linear-gradient(to top ,#d9d9d9, #ddd); 
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    /* text-shadow: 0 0 20px #fff, 0 0 30px #84358d, 0 0 40px #84358d, 0 0 50px #84358d, 0 0 60px #84358d, 0 0 70px #84358d, 0 0 80px #84358d; */
   font-weight: 900;
   font-size: 3em;
 }
@@ -178,7 +191,9 @@ p {
 
 /* Start Principle Style*/
 .principle {
-  background-color: #6d3e8f;
+  background:linear-gradient(to bottom, #d68490, #ab99c9); 
+  color: var(--dark-color);
+
 }
 /* End Principle Style */
 
@@ -186,13 +201,13 @@ p {
 .service-list {
   list-style-type: disc;
 }
-.parent {
+/* .parent {
   position: relative;
   top: 0;
   left: 0;
   border-radius: 90px;
-}
-.image2 {
+} */
+/* .image2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -212,16 +227,17 @@ p {
 }
 .img-spec-over {
   top: 240px;
-}
+} */
 
 /* End Service Style */
 
 /* Start Footer Style */
 .footer {
   width: 100%;
-  background-color: #6d3e8f;
+  background:linear-gradient(to top, #d68490, #ab99c9); 
   padding: 30px 0px;
   direction: rtl;
+  font-weight:600;
   z-index: 100;
 }
 /* End Footer Style */
@@ -301,7 +317,7 @@ p {
 }
 @media(max-width: 425px){
 .scroll-icon {
-  bottom: 80px;
+  bottom: 0px;
 }
 }
 /* End Media Query */

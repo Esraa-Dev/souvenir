@@ -228,8 +228,57 @@ p {
 .img-spec-over {
   top: 240px;
 } */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    FONT-SIZE: 24PX;
+    right: 17px;
+    PADDING: 12PX 16PX;
+    display: none;
+    background-color: var(--main-color);
+    color: var(--light-color);
+}
 
 /* End Service Style */
+.spinner {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-color: var(--main-color) transparent var(--main-color) transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background:var(--main-color)
+    z-index: 1;
+}
+
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: var(--light-color);
+    z-index: 9999;
+}
+
+.loader-container-hidden {
+    display: none;
+}
 
 /* Start Footer Style */
 .footer {

@@ -167,7 +167,7 @@ p {
 position:relative;
 height:100vh;}
 .hero-title{
-  width:80%;
+  width:60%;
   margin:auto
 }
 .hero-title {
@@ -318,7 +318,7 @@ height:100vh;}
   }
   
  .hero-title{
-  width:100%;
+  width:90%;
 }
 }
 

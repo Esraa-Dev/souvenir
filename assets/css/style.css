@@ -163,25 +163,32 @@ p {
 
 /* End Nav Style */
 /* Start Hero Style */
+.hero-header{
+position:relative;
+height:100vh;}
 .hero-title{
   width:80%;
   margin:auto
 }
 .hero-title {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
   color: #fff;
   text-shadow:0 0 10px #000, 0 0 10px #d500ff, 0 0 10px #000,0 0 10px #000;
 }
 
-.hero-header {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;            /* fall-back */
-  min-height: -moz-available;
-  min-height: -webkit-fill-available;
-  min-height: fill-available;
-}  background: url("/assets/images/hero.png");
-  background-repeat: no-repeat;
+.hero-img {
+  position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  background: url("/assets/images/hero.png");
+     background-repeat: no-repeat;
   background-attachment:fixed;
+  background-size:cover;
 }
 
 .scroll-icon {

@@ -7,8 +7,6 @@
 }
 html {
   scroll-icon-behavior: smooth;
-    height: -webkit-fill-available;
-
 }
 
 * {
@@ -177,9 +175,11 @@ p {
 .hero-header {
   position: relative;
   width: 100%;
-     min-height: 100vh;
+  min-height: 100vh;            /* fall-back */
+  min-height: -moz-available;
   min-height: -webkit-fill-available;
-  background: url("/assets/images/hero.png");
+  min-height: fill-available;
+}  background: url("/assets/images/hero.png");
   background-repeat: no-repeat;
   background-attachment:fixed;
 }
